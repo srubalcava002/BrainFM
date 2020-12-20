@@ -516,4 +516,16 @@ Wire Wire Line
 	6350 3250 5850 3250
 Wire Wire Line
 	6350 3350 5850 3350
+Text GLabel 1100 1500 0    50   Input ~ 0
+EN
+Text GLabel 3100 1600 2    50   Input ~ 0
+P_RX
+Text GLabel 3100 1800 2    50   Input ~ 0
+P_TX
+Wire Wire Line
+	2650 1800 3100 1800
+Wire Wire Line
+	3100 1600 2650 1600
+Wire Wire Line
+	1100 1500 1450 1500
 $EndSCHEMATC
