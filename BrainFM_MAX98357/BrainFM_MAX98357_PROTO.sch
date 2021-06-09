@@ -30,7 +30,7 @@ U 1 1 5EB3E810
 P 10550 5250
 F 0 "#PWR0101" H 10550 5100 50  0001 C CNN
 F 1 "+BATT" V 10565 5378 50  0000 L CNN
-F 2 "" H 10550 5250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10550 5250 50  0001 C CNN
 F 3 "" H 10550 5250 50  0001 C CNN
 	1    10550 5250
 	0    1    1    0   
@@ -67,7 +67,7 @@ U 1 1 5EBB09AA
 P 10550 5400
 F 0 "#PWR0103" H 10550 5250 50  0001 C CNN
 F 1 "-BATT" V 10565 5528 50  0000 L CNN
-F 2 "" H 10550 5400 50  0001 C CNN
+F 2 "Connector_Pin:Pin_D1.3mm_L11.0mm" H 10550 5400 50  0001 C CNN
 F 3 "" H 10550 5400 50  0001 C CNN
 	1    10550 5400
 	0    1    1    0   
@@ -447,14 +447,12 @@ F 3 "~" H 9650 3800 50  0001 C CNN
 	1    9500 3850
 	1    0    0    -1  
 $EndComp
-Text GLabel 3100 3000 2    50   Input ~ 0
+Text GLabel 3100 3400 2    50   Input ~ 0
 LRCK
 Text GLabel 3100 3200 2    50   Input ~ 0
 DATA
 Text GLabel 3100 3300 2    50   Input ~ 0
 BCK
-Wire Wire Line
-	3100 3000 2650 3000
 Wire Wire Line
 	3100 3200 2650 3200
 Wire Wire Line
@@ -528,4 +526,6 @@ Wire Wire Line
 	3100 1600 2650 1600
 Wire Wire Line
 	1100 1500 1450 1500
+Wire Wire Line
+	3100 3400 2650 3400
 $EndSCHEMATC
