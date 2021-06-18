@@ -382,10 +382,8 @@ Text GLabel 6150 2950 0    50   Input ~ 0
 SD
 Wire Wire Line
 	6350 2950 6150 2950
-Text GLabel 6150 3050 0    50   Input ~ 0
+Text GLabel 5450 2950 1    50   Input ~ 0
 GAIN
-Wire Wire Line
-	6350 3050 6150 3050
 Text GLabel 5850 3350 0    50   Input ~ 0
 LRCK
 Text GLabel 5850 3150 0    50   Input ~ 0
@@ -476,4 +474,30 @@ F 3 "" H 1750 6050 50  0001 C CNN
 	1    1750 6050
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Device:R R3
+U 1 1 60C188DD
+P 5050 3050
+F 0 "R3" H 5120 3096 50  0000 L CNN
+F 1 "100k" H 5120 3005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4980 3050 50  0001 C CNN
+F 3 "~" H 5050 3050 50  0001 C CNN
+	1    5050 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0115
+U 1 1 60C1B442
+P 4650 3050
+F 0 "#PWR0115" H 4650 2900 50  0001 C CNN
+F 1 "+3.3V" H 4665 3223 50  0000 C CNN
+F 2 "" H 4650 3050 50  0001 C CNN
+F 3 "" H 4650 3050 50  0001 C CNN
+	1    4650 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 3050 5200 3050
+Wire Wire Line
+	4900 3050 4650 3050
 $EndSCHEMATC
